@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Buscador web </title>
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">  
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+    <h1>Buscador de Libros</h1>
+
+    <div class="contenedor">
+
+        <!-- , Terror psicológico, Aventura, Caballería, Drama, Histórico, Novela de formación, Contemporánea, 
+    // Misterio histórico, Romance histórico, Memorias, Filosófica, Thriller, Gótico,Sátira -->
+
+        <form id="buscador">
+            <div class="row">
+                <div class="three columns">
+                    <label for="genero">Genero</label>
+                    <select class="u-full-width" id="genero">
+                        <option value="">Seleccione</option>
+                        <option value="Terror">Terror</option>
+                        <option value="aventura">Aventura</option>
+                        <option value="caballeria">Caballería</option>
+                        <option value="drama">Drama</option>
+                        <option value="historico">Historico</option>
+                        <option value="novela de formacion">Novela de formacion</option>
+                        <option value="contemporánea">Contemporánea</option>
+                        <option value="misterio historico"> Misterio Historico</option>
+                        <option value="romance historico">Romance historico</option>
+                        <option value="memorias">Memorias</option>
+                        <option value="filosofica">Filosofica</option>
+                        <option value="gotico">Gotico</option>
+                        <option value="satira">Satira</option>
+                        <option value="fantasía">Fantasía</option>
+                        <option value="realismo mágico">Realismo mágico</option>
+                        <option value="distopía">Distopía</option>
+                        <option value="infantil y juvenil">Infantil y juvenil</option>
+                        <option value="autoayuda">Autoayuda</option>
+                    </select>
+                </div>
+                <div class="three columns">
+                    <label for="year">Año</label>
+                    <select class="u-full-width" id="year">
+                        <option value="">Seleccione</option>
+                        
+                    </select>
+                </div>
+           
+
+
+                 <div class="three columns">
+                    <label for="precio">Precio</label>
+                    <select class="u-full-width" id="precio">
+                            <option value="">Seleccione</option>
+                            <option value="20000">20,000</option>
+                            <option value="30000">30,000</option>
+                            <option value="40000">40,000</option>
+                            <option value="50000">50,000</option>
+                            <option value="60000">60,000</option>
+                            <option value="70000">70,000</option>
+                            <option value="80000">80,000</option>
+                            <option value="90000">90,000</option>
+                    </select>
+                </div> 
+
+
+
+                <div class="row">
+                    <div class="four columns">
+                        <label for="autor">Autor</label>
+                        <select class="u-full-width" id="autor">
+                                <option value="">Seleccione</option>
+                                <option value="Albert Camus">Albert Camus</option>
+                                <option value="Alice Walker">Alice Walker</option>
+                                <option value="Aldous Huxley">Aldous Huxley</option>
+                                <option value="Antoine de Saint-Exupéry">Antoine de Saint-Exupéry</option>
+                                <option value="Arthur Golden">Arthur Golden</option>
+                                <option value="Dan Brown">Dan Brown</option>
+                                <option value="F. Scott Fitzgerald">F. Scott Fitzgerald</option>
+                                <option value="Fyodor Dostoievski">Fyodor Dostoievski</option>
+                                <option value="Gabriel García Márquez">Gabriel García Márquez</option>
+                                <option value="George Orwell">George Orwell</option>
+                                <option value="Harper Lee">Harper Lee</option>
+                                <option value="Herman Melville">Herman Melville</option>
+                                <option value="J.D. Salinger">J.D. Salinger</option>
+                                <option value="J.R.R. Tolkien">J.R.R. Tolkien</option>
+                                <option value="Jane Austen">Jane Austen</option>
+                                <option value="León Tolstói">León Tolstói</option>
+                                <option value="Michael Ondaatje">Michael Ondaatje</option>
+                                <option value="Miguel de Cervantes">Miguel de Cervantes</option>
+                                <option value="Milan Kundera">Milan Kundera</option>
+                                <option value="Oscar Wilde">Oscar Wilde</option>
+                                <option value="Patrick Rothfuss">Patrick Rothfuss</option>
+                                <option value="Patrick Süskind">Patrick Süskind</option>
+                                <option value="Paulo Coelho">Paulo Coelho</option>
+                                <option value="Umberto Eco">Umberto Eco</option>
+                                <option de="Victor Hugo">Victor Hugo</option>
+                        </select>
+                    </div>
+                    <div class="four columns">
+                        <label for="editorial">Editorial</label>
+                        <select class="u-full-width" id="editorial">
+                                <option value="">Seleccione</option>
+                                <option value="Nova">Nova</option>
+                                <option value="Sudamericana">Sudamericana</option>
+                                <option value="Debolsillo">Debolsillo</option>
+                                <option value="Salamandra">Salamandra</option>
+                                <option value="Planeta">Planeta</option>
+                                <option value="Minotauro">Minotauro</option>
+                                <option value="Cátedra">Cátedra</option>
+                                <option value="Lumen">Lumen</option>
+                                <option value="Alfaguara">Alfaguara</option>
+                                <option value="Tusquets">Tusquets</option>
+                                <option value="Anagrama">Anagrama</option>
+                        </select>
+                    </div>
+                    
+                </div>
+            </div>
+        </form>
+
+
+        <h1>Resultados</h1>
+        <div id="resultado"></div>
+    </div>
+
+    <a class="sitio-web"  >ED Tecnica EG</a>
+    <p id="alumno">Estudiante: Miguel De Sousa</p>
+
+    <script src="js/db.js"></script>
+    <script src="js/buscador.js"></script>
+</body>
+</html>
